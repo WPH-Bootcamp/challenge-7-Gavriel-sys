@@ -1,3 +1,1 @@
-import Hero from "./Hero";
-
-export default Hero;
+export { default as HeroSection } from "./Hero";
