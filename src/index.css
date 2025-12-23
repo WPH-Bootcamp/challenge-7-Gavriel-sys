@@ -1,1 +1,63 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Quicksand", sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#ff623e] flex items-center justify-center w-full md:w-auto px-8 h-[52px] text-[16px] font-bold rounded-full transition-all hover:bg-[#e05635];
+    box-shadow: inset 4px 4px 4px 0px rgba(255, 255, 255, 0.25);
+  }
+  .menu-link {
+    @apply block no-underline text-white text-sm py-2 transition-colors duration-300 ease-in-out hover:text-orange-100;
+  }
+
+  .angka-step {
+    @apply text-[13.3px] font-bold leading-[25px];
+  }
+
+  .lingkaran-step {
+    @apply flex-shrink-0 w-[40px] h-[40px] bg-[#FF623E] rounded-full flex items-center justify-center z-10;
+  }
+
+  .smart-it {
+    @apply flex flex-col items-start gap-[20px] pb-[20px] px-[20px] rounded-2xl border border-[#181D27] w-full;
+  }
+
+  .smart-it-icon {
+    @apply w-[64px] h-[64px] relative top-[-21px] flex flex-col;
+  }
+
+  .smart-it-text {
+    @apply flex flex-col gap-[4px] mt-[-35px];
+  }
+
+  .smart-it-title {
+    @apply font-bold text-[16px];
+  }
+
+  .smart-it-desc {
+    @apply text-[#A4A7AE] font-medium text-[14px] leading-[30px];
+  }
+
+  .work-card {
+    @apply m-0 flex flex-col gap-[8px];
+  }
+
+  .img-work-card {
+    @apply w-[361px] h-[361px] rounded-[16px];
+  }
+
+  .landing-page-text {
+    @apply text-[14px] font-medium leading-[28px] text-[#FF623E];
+  }
+
+  .portofolio-text {
+    @apply text-[16px] font-bold leading-[30px] tracking-[-2%];
+  }
+}
